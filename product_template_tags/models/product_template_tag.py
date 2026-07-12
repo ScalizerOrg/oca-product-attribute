@@ -31,7 +31,16 @@ class ProductTemplateTag(models.Model):
     )
     parent_id = fields.Many2one("product.template.tag", index=True, ondelete="cascade")
     child_ids = fields.One2many("product.template.tag", "parent_id")
-    parent_path = fields.Char(index=True, unaccent=False)
+    parent_path = fields.Char(index=True)
+    # [MIG v19]: Odoo 19 warns when a compute walks a parent chain unless the
+    # target field is declared recursive=True. Redeclare display_name (which
+    # would otherwise be the implicit base field) with the recursive flag so
+    # _compute_display_name below can safely traverse parent_id.
+    display_name = fields.Char(
+        compute="_compute_display_name",
+        recursive=True,
+        store=False,
+    )
 
     _sql_constraints = [
         (

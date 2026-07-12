@@ -15,7 +15,7 @@
                             type="action"
                             class="oe_stat_button"
                             icon="fa-tags"
-                            context="{'search_default_tag_ids': active_id}"
+                            context="{'search_default_tag_ids': id}"
                         >
                             <field
                                 name="products_count"
@@ -49,15 +49,13 @@
         </field>
     </record>
     <record id="product_template_tag_search_view" model="ir.ui.view">
-        <field name="name">
-            product.template.tag.search (in product_template_tags)
-        </field>
+        <field name="name">product.template.tag.search (in product_template_tags)</field>
         <field name="model">product.template.tag</field>
         <field name="arch" type="xml">
             <search>
                 <field name="name" />
                 <field name="company_id" groups="base.group_multi_company" />
-                <group expand="0">
+                <group name="group_by">
                     <filter
                         name="group_by_company"
                         string="Company"
