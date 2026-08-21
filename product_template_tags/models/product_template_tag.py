@@ -42,13 +42,10 @@ class ProductTemplateTag(models.Model):
         store=False,
     )
 
-    _sql_constraints = [
-        (
-            "name_uniq",
-            "unique(name, company_id)",
-            "Tag name must be unique inside a company",
-        )
-    ]
+    _name_uniq = models.Constraint(
+        "unique(name, company_id)",
+        "Tag name must be unique inside a company",
+    )
 
     @api.depends("product_tmpl_ids")
     def _compute_products_count(self):
