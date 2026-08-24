@@ -8,4 +8,10 @@ class ProductProduct(models.Model):
     _inherit = ["product.product", "product.cost.security.mixin"]
 
     # Inherited fields
-    standard_price = fields.Float(groups="product_cost_security.group_product_cost")
+    # See product_template.py for the full rationale: purchase.group_purchase_user
+    # must be included here directly (not only via a downstream implied_ids grant)
+    # so that core purchase's own view_product_product_supplier_inherit validates
+    # cleanly on a fresh install (2026-08-24).
+    standard_price = fields.Float(
+        groups="product_cost_security.group_product_cost,purchase.group_purchase_user"
+    )
