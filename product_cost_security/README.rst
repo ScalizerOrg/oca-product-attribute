@@ -63,10 +63,10 @@ To use this module you need to:
 Known issues / Roadmap
 ======================
 
--  To edit product costs, apart from having *Product costs / Edit*
-   permission, you need to have some other permission that lets you edit
-   products, such as *Sales / Administrator* or *Inventory /
-   Administrator*.
+- To edit product costs, apart from having *Product costs / Edit*
+  permission, you need to have some other permission that lets you edit
+  products, such as *Sales / Administrator* or *Inventory /
+  Administrator*.
 
 Bug Tracker
 ===========
@@ -89,25 +89,25 @@ Authors
 Contributors
 ------------
 
--  `Tecnativa <https://www.tecnativa.com>`__:
+- `Tecnativa <https://www.tecnativa.com>`__:
 
-   -  Sergio Teruel
-   -  David vidal
+  - Sergio Teruel
+  - David vidal
 
--  Watthanun Khorchai <watthanun_t@hotmail.com>
--  Carlos Lopez <celm1990@gmail.com>
--  `Onestein <https://www.onestein.eu>`__:
+- Watthanun Khorchai <watthanun_t@hotmail.com>
+- Carlos Lopez <celm1990@gmail.com>
+- `Onestein <https://www.onestein.eu>`__:
 
-   -  Anjeel Haria
+  - Anjeel Haria
 
--  Jairo Llopis (`Moduon <https://www.moduon.team>`__)
--  `Binhex <https://www.binhex.cloud>`__:
+- Jairo Llopis (`Moduon <https://www.moduon.team>`__)
+- `Binhex <https://www.binhex.cloud>`__:
 
-   -  Mario Luis <m.luis@binhex.cloud>
+  - Mario Luis <m.luis@binhex.cloud>
 
--  `Open Source Integrators <https://www.opensourceintegrators.com>`__
+- `Open Source Integrators <https://www.opensourceintegrators.com>`__
 
-   -  Daniel Reis <dreis@opensourceintegrators.com>
+  - Daniel Reis <dreis@opensourceintegrators.com>
 
 Maintainers
 -----------
