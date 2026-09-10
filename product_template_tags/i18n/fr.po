@@ -126,8 +126,8 @@ msgstr ""
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_product__tag_ids
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template__tag_ids
-msgid "Tags"
-msgstr ""
+msgid "Hierarchical Tags"
+msgstr "Étiquettes"
 
 #. module: product_template_tags
 #. odoo-python

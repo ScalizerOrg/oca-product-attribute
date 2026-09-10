@@ -49,7 +49,9 @@
         </field>
     </record>
     <record id="product_template_tag_search_view" model="ir.ui.view">
-        <field name="name">product.template.tag.search (in product_template_tags)</field>
+        <field
+            name="name"
+        >product.template.tag.search (in product_template_tags)</field>
         <field name="model">product.template.tag</field>
         <field name="arch" type="xml">
             <search>

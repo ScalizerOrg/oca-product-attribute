@@ -1,7 +1,7 @@
 # Copyright 2017 ACSONE SA/NV
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 from odoo.exceptions import ValidationError
 
 
@@ -92,4 +92,4 @@ class ProductTemplateTag(models.Model):
         # (and its meaning inverted — it now returns True when a cycle is
         # detected, instead of False).
         if self._has_cycle("parent_id"):
-            raise ValidationError(_("Tags can't be recursive."))
+            raise ValidationError(self.env._("Tags can't be recursive."))

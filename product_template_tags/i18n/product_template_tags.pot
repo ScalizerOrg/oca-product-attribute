@@ -123,7 +123,7 @@ msgstr ""
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_product__tag_ids
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template__tag_ids
-msgid "Tags"
+msgid "Hierarchical Tags"
 msgstr ""
 
 #. module: product_template_tags
